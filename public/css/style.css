@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+        *{
+            font-family: Poppin, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            max-height: 100vh;
+        }
+
+        /* Phần header và phần navbar menu */
+        .header{
+            width: 100%;
+            position: fixed;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            background-color: #fff;
+        }
+
+        .navbar{
+            display: flex;
+            padding: 0 3rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            line-height: 65px;
+        }
+
+        a#menu_icon{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #343a40;
+            color: #343a40;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+        a#menu_icon:hover{
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        span.brand img{
+            vertical-align: middle;
+            border: none;
+            width: 60px;
+        }
+        span.brand h2{
+            display: inline;
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+
+        a#account-show{
+            font-size: 14px;
+            color: #343a40;
+        }
+
+        nav.side-navbar{
+            position: fixed;
+            top: 60px;
+            left: 0;
+            text-align: left;
+            transition: all 0.3s linear;
+            z-index: 998;
+            height: 100%;
+            width: 250px;
+            background-color: #343a40;
+        }
+
+        nav.hiden-bar{
+            left: -300px;
+        }
+
+        #list-menu{
+            margin-top: 15px;
+        }
+
+        ul#list-menu li a{
+            padding: 5px 10px;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            border-radius: 4px;
+            margin: 5px 15px;
+        }
+        ul#list-menu li a i{
+            font-size: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        ul#list-menu li a:hover{
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        div.page{
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: calc(100% - 250px);
+            min-height: 100vh;
+            transition: all 0.3s linear;
+            background: #F4F7FA;
+        }
+        .resize-page{
+            width: 100% !important;
+        }
+
