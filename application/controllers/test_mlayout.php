@@ -5,7 +5,9 @@
             parent::__construct();
         }
         function index(){
-            $this->load->view("mlayout");
+            $data["title"]="Layout Master";
+            $data["subview"]="";
+            $this->load->view("mlayout",$data);
         }
     }
 ?>
