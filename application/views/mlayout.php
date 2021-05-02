@@ -29,78 +29,21 @@
         </header>
         <nav class="side-navbar">
             <ul id="list-menu">
-                <li id="dashboard"><a href="#"><i class="fa fa-home"></i> dashboard</a></li>
+                <li id="dashboard"><a href="/shop_manager"><i class="fa fa-home"></i> dashboard</a></li>
                 <li id="products"><a href="#"><i class="fa fa-list"></i> products</a></li>
                 <li id="customer"><a href="#"><i class="fa fa-user-o"></i> customer</a></li>
-                <li id="purchase"><a href="#"><i class="fa fa-file-text-o"></i> purchase list</a></li>
+                <li id="purchase"><a href="/shop_manager/purchase"><i class="fa fa-file-text-o"></i> purchase list</a></li>
                 <li id="sale-list"><a href="#"><i class="fa fa-pencil-square-o"></i> sale list</a></li>
                 <li id="report"><a href="#"><i class="fa fa-bar-chart"></i> report</a></li>
             </ul>
         </nav>
         <div class="page">
-            <!-- <?php  echo $subview; ?> -->
-            <section>
-                <table id="purchase_table">
-                    <thead>
-                        <tr role="row">
-                            <th class="checkboxes-select-all checkboxes"><input type="checkbox"></th>
-                            <th>Date</th>
-                            <th>Reference No</th>
-                            <th>Supplier</th>
-                            <th>Items</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr role="row" data-purchase="">
-                            <td class="checkboxes-cell checkboxes"><input type="checkbox" name="" id=""></td>
-                            <td>2021-04-28 18:35:22</td>
-                            <td>0835927309</td>
-                            <td>Đoàn Minh Vương</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>500</td>
-                            <td>
-                                <div class="btn-group">
-                                    <a href="#" title="view" class="btn btn-view"><i class="fa fa-eye"></i></a>
-                                    <a href="#" title="edit" class="btn btn-edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" title="delete" class="btn btn-del"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr role="row" data-purchase="">
-                            <td class="checkboxes-cell"><input type="checkbox" name="" id=""></td>
-                            <td>2021-04-28 18:35:22</td>
-                            <td>0835927309</td>
-                            <td>Đoàn Minh Vương</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>500</td>
-                            <td>
-                                <div class="btn-group">
-                                    <a href="#" title="view" class="btn btn-view"><i class="fa fa-eye"></i></a>
-                                    <a href="#" title="edit" class="btn btn-edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" title="delete" class="btn btn-del"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <th rowspan="1" colspan="1"></th>
-                        <th rowspan="1" colspan="1">Total:</th>
-                        <th rowspan="1" colspan="1"></th>
-                        <th rowspan="1" colspan="1"></th>
-                        <th rowspan="1" colspan="1"></th>
-                        <th rowspan="1" colspan="1"></th>
-                        <th rowspan="1" colspan="1">1000</th>
-                        <th rowspan="1" colspan="1"></th>
-                    </tfoot>
-                </table>
-            </section>
+            <?php  
+                if(isset($subview))
+                    $this->load->view($subview);
+            ?>
         </div>
     </div>
-    <script src="public/js/giaodien.js"></script>
+    <script src="public/js/giaodien_chung.js"></script>
 </body>
 </html>

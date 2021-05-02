@@ -115,7 +115,10 @@
     .resize-page{
         width: 100% !important;
     }
-
+    .table-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
     table#purchase_table{
         border-collapse: collapse !important;
         width: 100%;
@@ -192,7 +195,54 @@
     .selected:hover{
         background-color: #0275d8 !important;
     }
+
+    .small-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
     
+    .table-length p select{
+        height: 2rem;
+        width: 2.5rem;
+        color: #999;
+        border: 1px solid #999;
+    }
+
+    .table-filter p input{
+        height: 2rem;
+        padding: 0 10px;
+        color: #999;
+        border: 1px solid #999;
+    }
+
+    .btn-convert-table .btn{
+        padding: 0.25rem 0.75rem;
+        border: none;
+        color: #fff;
+        height: 100%;
+        cursor: pointer;
+    }
+    .btn-convert-table .btn-pdf{
+        background-color: #d8121f;
+    }
+    .btn-convert-table .btn-print{
+        background-color: #007fff;
+    }
+    .btn-convert-table .btn-col-visib{
+        background-color: #7c5cc4;
+    }
+
+    .btn-add{
+        margin-top: 25px;
+    }
+    .btn-add a{
+        padding: 0.55rem 0.75rem;
+        background-color: #17a2b8;
+        color: #fff;
+    }
+
 
 
         

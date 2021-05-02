@@ -23,4 +23,15 @@ $(document).ready(function(){
             $("tr .checkboxes-cell input[type='checkbox']").prop("checked",false);
         }
     });
+
+    $("tr .checkboxes-cell input[type='checkbox']").change(function(){
+        var status_check = true;
+        $("tr .checkboxes-cell input[type='checkbox']").each(function(){
+            if($(this).prop("checked") == false){
+                    status_check = false;
+            }     
+        });
+        $("thead tr .checkboxes-select-all input[type='checkbox']").prop("checked",status_check);
+    });
+
 });
