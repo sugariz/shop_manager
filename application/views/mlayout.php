@@ -30,11 +30,11 @@
         <nav class="side-navbar">
             <ul id="list-menu">
                 <li id="dashboard"><a href="/shop_manager"><i class="fa fa-home"></i> dashboard</a></li>
-                <li id="products"><a href="#"><i class="fa fa-list"></i> products</a></li>
-                <li id="customer"><a href="#"><i class="fa fa-user-o"></i> customer</a></li>
-                <li id="purchase"><a href="/shop_manager/purchase"><i class="fa fa-file-text-o"></i> purchase list</a></li>
-                <li id="sale-list"><a href="#"><i class="fa fa-pencil-square-o"></i> sale list</a></li>
-                <li id="report"><a href="#"><i class="fa fa-bar-chart"></i> report</a></li>
+                <li id="products" class="btn-menu"><a href="#"><i class="fa fa-list"></i> products</a></li>
+                <li id="customer" class="btn-menu"><a href="#"><i class="fa fa-user-o"></i> customer</a></li>
+                <li id="purchase" class="btn-menu"><a href="/shop_manager/purchase"><i class="fa fa-file-text-o"></i> purchase list</a></li>
+                <li id="sale-list" class="btn-menu"><a href="#"><i class="fa fa-pencil-square-o"></i> sale list</a></li>
+                <li id="report" class="btn-menu"><a href="#"><i class="fa fa-bar-chart"></i> report</a></li>
             </ul>
         </nav>
         <div class="page">

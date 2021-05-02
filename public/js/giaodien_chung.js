@@ -6,6 +6,15 @@ $(document).ready(function(){
         $(".page").toggleClass("resize-page");
     });
 
+    //*!Xử lý sự kiện chọn mục trong menu
+        $(".btn-menu a").each(function(){
+            if($(this).prop("href") == $(location).attr("href")){
+                $(this).parent().css("background-color","rgba(255, 255, 255, 0.2)");
+            }
+        });
+
+
+
     //*!Thêm class selected cho purchase list
     $("tr .checkboxes-cell input[type='checkbox']").click(function(){
         if($(this).prop('checked')==true)
@@ -33,5 +42,7 @@ $(document).ready(function(){
         });
         $("thead tr .checkboxes-select-all input[type='checkbox']").prop("checked",status_check);
     });
+
+
 
 });
