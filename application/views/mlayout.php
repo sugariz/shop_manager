@@ -40,7 +40,7 @@
         <div class="page">
             <?php  
                 if(isset($subview))
-                    $this->load->view($subview);
+                    $this->load->view($subview,$data);
             ?>
         </div>
     </div>

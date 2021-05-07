@@ -42,7 +42,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr role="row" data-purchase="">
+<!--                            <tr role="row" data-purchase="">
                                 <td class="checkboxes-cell checkboxes"><input type="checkbox" name="" id=""></td>
                                 <td>2021-04-28 18:35:22</td>
                                 <td>0835927309</td>
@@ -57,23 +57,27 @@
                                         <a href="#" title="delete" class="btn btn-del"><i class="fa fa-times"></i></a>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr role="row" data-purchase="">
-                                <td class="checkboxes-cell"><input type="checkbox" name="" id=""></td>
-                                <td>2021-04-28 18:35:22</td>
-                                <td>0835927309</td>
-                                <td>Đoàn Minh Vương</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>500</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a href="#" title="view" class="btn btn-view"><i class="fa fa-eye"></i></a>
-                                        <a href="#" title="edit" class="btn btn-edit"><i class="fa fa-pencil"></i></a>
-                                        <a href="#" title="delete" class="btn btn-del"><i class="fa fa-times"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
+                            </tr> -->
+                            <?php
+                                foreach($data as $key => $value){
+                                    echo "<tr role='row' data-purchase=''>
+                                    <td class='checkboxes-cell checkboxes'><input type='checkbox' name='' id=''></td>
+                                    <td>$value[thoigian_nhap]</td>
+                                    <td>$value[ma_nhap]</td>
+                                    <td>$value[ten_nhacungcap]</td>
+                                    <td></td>
+                                    <td>$value[soluong]</td>
+                                    <td>$value[tongcong]</td>
+                                    <td>
+                                        <div class='btn-group'>
+                                            <a href='#' title='view' class='btn btn-view'><i class='fa fa-eye'></i></a>
+                                            <a href='#' title='edit' class='btn btn-edit'><i class='fa fa-pencil'></i></a>
+                                            <a href='#' title='delete' class='btn btn-del'><i class='fa fa-times'></i></a>
+                                        </div>
+                                    </td>
+                                </tr>";
+                                }
+                            ?>
                         </tbody>
                         <tfoot>
                             <th rowspan="1" colspan="1"></th>
@@ -82,7 +86,15 @@
                             <th rowspan="1" colspan="1"></th>
                             <th rowspan="1" colspan="1"></th>
                             <th rowspan="1" colspan="1"></th>
-                            <th rowspan="1" colspan="1">1000</th>
+                            <th rowspan="1" colspan="1">
+                            <?php
+                                $total=0;
+                                foreach($data as $key=>$value){
+                                    $total+=$value["tongcong"];
+                                }
+                                echo $total;
+                            ?>
+                        </th>
                             <th rowspan="1" colspan="1"></th>
                         </tfoot>
                     </table>
