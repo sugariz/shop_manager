@@ -72,7 +72,7 @@
                                         <div class='btn-group'>
                                             <a href='#' title='view' class='btn btn-view'><i class='fa fa-eye'></i></a>
                                             <a href='#' title='edit' class='btn btn-edit'><i class='fa fa-pencil'></i></a>
-                                            <a href='#' title='delete' class='btn btn-del'><i class='fa fa-times'></i></a>
+                                            <a href='/shop_manager/purchase/del/".$value['ma_nhap']."' title='delete' class='btn btn-del'><i class='fa fa-times'></i></a>
                                         </div>
                                     </td>
                                 </tr>";

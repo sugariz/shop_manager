@@ -5,6 +5,7 @@
             parent::__construct();
             $this->load->database();
             $this->load->model("suplier_model");
+            $this->load->model("NhapKho_model");
         }
 
         function getPurchaseList(){
@@ -27,7 +28,9 @@
         }
 
         function delPurchase($id){
-            
+            $this->NhapKho_model->delByPurchaseID($id);
+            $this->db->where("ma_nhap",$id);
+            $this->db->delete($this->_table);
         }
     }
 ?>
