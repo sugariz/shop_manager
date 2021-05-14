@@ -1,3 +1,6 @@
+        <?php
+            
+        ?>
         <section>
                 <div class="table-wrapper">
                     <div class="btn-add add-purchase">
@@ -59,13 +62,14 @@
                                 </td>
                             </tr> -->
                             <?php
+
                                 foreach($data as $key => $value){
-                                    echo "<tr role='row' data-purchase=''>
+                                    echo "<tr role='row' data-purchase = '[\"$value[thoigian_nhap]\",\"$value[ma_nhap]\",\"$value[ten_nhacungcap]\",\"$value[soluong]\",\"$value[tongcong]\",\"$value[ghichu]\"]'>
                                     <td class='checkboxes-cell checkboxes'><input type='checkbox' name='' id=''></td>
                                     <td>$value[thoigian_nhap]</td>
                                     <td>$value[ma_nhap]</td>
                                     <td>$value[ten_nhacungcap]</td>
-                                    <td></td>
+                                    <td>".count($this->NhapKho_model->getListAt($value['ma_nhap']))."</td>
                                     <td>$value[soluong]</td>
                                     <td>$value[tongcong]</td>
                                     <td>
@@ -99,6 +103,50 @@
                         </tfoot>
                     </table>
                 </div>
+                <div class="container-full-screen">  
+                    <div class="purchase-details">
+                        <div class="details-head">
+                            <h5>Purchase Details</h5>
+                            <button><i class="fa fa-print" aria-hidden="true"> Print</i></button>
+                            <h3>X</h3>
+                        </div>
+                        <div class="details-body">
+                            <!-- <p><strong>Date: </strong>2021-05-06</p>
+                            <p><strong>Reference: </strong>79371293721</p>
+                            <p><strong>Supplier: </strong>2021-05-06</p> -->
+                        </div>
+                        <table class="table product-purchase-list">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Product</th>
+                                    <th>Qty</th>
+                                    <th>Cost</th>
+                                    <th>SubTotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td><strong>1</strong></td>
+                                    <td>Laptop Macbook Pro</td>
+                                    <td>10</td>
+                                    <td>25000</td>
+                                    <td>250000</td>
+                                </tr> -->
+                            <!-- <tr>
+                                <td colspan="2"><strong>Total</strong></td>
+                                <td><?php echo $this->purchase_model->getPurchaseListAt(1)['soluong']; ?></td>
+                                <td></td>
+                                <td><?php echo $this->purchase_model->getPurchaseListAt(1)['tongcong']; ?></td>
+                            </tr>
+                            <tr> -->
+                            </tbody>
+                        </table>
+                        <div class="purchase-footer">
+                            <!-- <p><strong>Note: </strong></p>
+                            <p><strong>Create By:</strong> Vuong</p> -->
+                        </div>
+                    </div>
+                </div>
             </section>
-
             <script src="public/js/purchase.js"></script>

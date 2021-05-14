@@ -10,6 +10,17 @@
             $this->db->select("ma_sp,ma_nhap,soluong");
             return $this->db->get($this->_table)->result_array();
         }
+        
+        public function getListAt($id){
+            $listSp=[];
+            foreach($this->getList() as $key=>$value){
+                if($value["ma_nhap"] == $id){
+                    array_push($listSp,$value);
+                }
+            }
+            return $listSp;
+        }
+
         public function delByPurchaseID($id){
             $this->db->where("ma_nhap",$id);
             $this->db->delete($this->_table);

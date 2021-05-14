@@ -243,6 +243,77 @@
         background-color: #17a2b8;
         color: #fff;
     }
+    div.container-full-screen{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+    div.purchase-details{
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        border-radius: 10px;
+        color: #555;
+        animation: toBottom 0.2s linear;
+    }
+    @keyframes toBottom{
+        0%{
+            top: 0%;
+        }
+        100%{
+            top: 50%;
+        }
+    }
+    div.details-head{
+        padding: 1.5rem 1rem;
+        border-bottom: 0.7px solid #999;
+    }
+    div.details-head h5{
+        font-size: 1rem;
+        display: inline-block;
+    }
+    div.details-head button{
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+        background: none;
+        border: 1px solid #7c5cc4;
+        color: #7c5cc4;
+        cursor: pointer;
+    }
+    div.details-head h3{
+        float: right;
+        color: #777;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    div.details-body{
+        padding: 1.5rem 1rem;
+    }
+    .product-purchase-list{
+        border-collapse: collapse !important;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .product-purchase-list th,.product-purchase-list td{
+        border-top: 1px solid #333;
+        padding: 0.75rem;
+    }
+    .product-purchase-list th{
+        text-align: left;
+    }
+    .purchase-footer{
+        padding: 0 1rem 1.5rem 1rem;
+    }
+
 
 
 

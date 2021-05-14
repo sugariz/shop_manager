@@ -6,6 +6,8 @@
             $this->load->helper('url');
             $this->load->library('session');
             $this->load->model("purchase_model");
+            $this->load->model("NhapKho_model");
+            $this->load->model("SanPham_model");
         }
         function index(){
             $data["data"] = $this->purchase_model->getPurchaseList();
