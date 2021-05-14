@@ -1,0 +1,155 @@
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.enter {
+    position: fixed !important;
+    top: 0;
+    left: -435px;
+    width: 70%;
+    transform: translateX(427px);
+    transition: all 2s;
+}
+
+.close {
+    transform: translateX(-427px) !important;
+    transition: all 2s;
+}
+
+.out-reponsive {
+    display: none;
+}
+
+.ul-open {
+    display: block !important;
+}
+
+.label-open {
+    display: inline-block !important;
+}
+
+@media only screen and (max-width: 768px) {
+    section.sub-menu-info>.container {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .label-reponsive {
+        display: block;
+        background: #26b2c8;
+    }
+    .out-reponsive {
+        display: none;
+        padding: 6px 10px;
+        background: #2894a5;
+        width: 78.2%;
+        color: #fff;
+        position: relative;
+    }
+    .out-reponsive label {
+        font-size: 19px;
+        padding: 3px 75px;
+    }
+    i.fas.fa-times {
+        position: absolute;
+        right: 12px;
+        top: 6px;
+        font-size: 22px;
+    }
+    ul.list-sub-menu-info {
+        margin: 0px 8.1px;
+        padding: 4px 0px;
+        position: relative;
+        background: #2894a5;
+        display: none;
+        width: 75%;
+    }
+    ul.list-sub-menu-info li {
+        display: block;
+        padding: 9px 6px;
+        background: #2894a5;
+        border-bottom: 1px solid #fff;
+    }
+    ul.list-sub-menu-info li {
+        position: relative;
+    }
+    img.img-reponsive {
+        display: none;
+    }
+    ul.list-sub-menu-info li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .label-reponsive label {
+        position: absolute;
+        top: 3px;
+        left: 40px;
+        color: #fff;
+        text-transform: uppercase
+    }
+    .icon-label {
+        position: relative;
+        padding: 3px 5px;
+        width: 100%;
+    }
+    i.fas.fa-align-justify {
+        color: #fff;
+    }
+    li#last-li {
+        border-bottom: none;
+        padding: 7px 6px;
+    }
+    .icon-reponsive-sub-menu {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 19px;
+    }
+    i.far.fa-plus-square {
+        color: white;
+    }
+    ul.list-woman-shose {
+        position: initial;
+        list-style: none;
+        width: 100%;
+        padding: 0px 0px;
+        background: #2894a5;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 600ms, visibility 600ms;
+        z-index: 100000000;
+    }
+    ul.list-sub-menu-info li {
+        display: block;
+        padding: 6px 6px;
+        background: #2894a5;
+        border: none;
+    }
+    ul.list-sub-menu-info li {
+        position: relative;
+    }
+    ul#ls-woman-s li a {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    i.fas.fa-caret-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    ul#ls-woman-s li a {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}

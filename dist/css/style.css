@@ -1,0 +1,72 @@
+ul#side-menu {
+    display: block;
+    border-bottom: none;
+}
+
+ul.btn-user li {
+    list-style: none;
+    display: inline-block;
+    margin: 83px 31px;
+}
+
+ul.btn-user {
+    text-align: center;
+}
+
+.selected {
+    color: #fff;
+}
+
+table#table-user tbody tr td img {
+    width: 28%;
+}
+
+table#table-user tbody tr td {
+    position: relative;
+    text-align: center;
+}
+
+table#table-user tbody tr th {
+    text-align: center;
+}
+
+th {
+    text-align: center !important;
+}
+
+li#li-u {
+    position: relative;
+}
+
+i.fas.fa-user {
+    position: absolute;
+    top: 12px;
+    margin: 0px 66px;
+}
+
+ul#side-menu li a {
+    margin: 0px 54px;
+    text-align: center;
+    border-radius: 19px;
+}
+
+li#li-p {
+    position: relative;
+}
+
+i.fas.fa-store {
+    position: absolute;
+    top: 13px;
+    margin: 0px 64px;
+}
+
+li#li-o {
+    position: relative;
+}
+
+i.fas.fa-shopping-cart {
+    position: absolute;
+    margin: 0px 63px;
+    top: 12px;
+}
+    

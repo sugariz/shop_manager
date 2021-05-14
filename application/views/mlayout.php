@@ -38,12 +38,9 @@
             </ul>
         </nav>
         <div class="page">
-            <?php  
-                if(isset($subview))
-                    $this->load->view($subview,$data);
-            ?>
+            
         </div>
     </div>
-    <script src="public/js/giaodien_chung.js"></script>
+    <script src="<?php echo base_url();?>public/js/giaodien_chung.js"></script>
 </body>
 </html>

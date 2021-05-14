@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/summernote/summernote-bs4.css">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/style.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <style>
             ul#side-menu {

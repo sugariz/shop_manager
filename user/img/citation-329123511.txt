@@ -1,0 +1,1 @@
+Huynh Quyet, Thang. (2018). Dự đoán xu thế chỉ số chứng khoán Việt Nam VN-Index sử dụng phân tích hồi quy Gaussian Process và mô hình tự hồi quy trung bình động ARMA. Research and Development on Information and Communication Technology. 10.32913/rd-ict.571. 

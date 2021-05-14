@@ -150,15 +150,15 @@
                             <ul class="nav nav-tabs" id="side-menu">
                                 <li class="nav-item" id="li-u">
                                     <i class="fas fa-user"></i>
-                                    <a class="nav-link active" data-toggle="tab" href="#user">User</a>
+                                    <a class="nav-link active" href="/shop_manager">Product</a>
                                 </li>
                                 <li class="nav-item" id="li-p">
                                     <i class="fas fa-store"></i>
-                                    <a class="nav-link" data-toggle="tab" href="#product">Product</a>
+                                    <a class="nav-link" href="/shop_manager/purchase">Purchase</a>
                                 </li>
                                 <li class="nav-item" id="li-o">
                                     <i class="fas fa-shopping-cart"></i>
-                                    <a class="nav-link" data-toggle="tab" href="#order">Order</a>
+                                    <a class="nav-link" href="#order">Order</a>
                                 </li>
                             </ul>
                             <!-- /.sidebar-menu -->
@@ -181,7 +181,7 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <?php if(isset($view_page)) $this->load->view($view_page) ?>
+        <?php if(isset($subview)) $this->load->view($subview) ?>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright © 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
