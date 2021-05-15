@@ -42,7 +42,7 @@ echo $string;
         Baris += '</select>';
         Baris += '</td>';
         Baris += '<td>';
-        Baris += '<input type="file" name="inpFile" id="inpFile">';
+        Baris += '<input type="file" name="inpFile[]" id="inpFile">';
         Baris += '<div class="image-preview" id="imagePreview">';
         Baris += '<img src="" alt="Image Preview" class="image-preview__image">';
         Baris += '<span class="image-preview__default-text">Image Preview</span>';
@@ -58,7 +58,7 @@ echo $string;
         Baris += '<input type="text" name="inp_detail[]" class="form-control inp_detail" placeholder="" required="">';
         Baris += '</td>';
         Baris += '<td class="text-center">';
-        Baris += '<a class="btn btn-sm btn-danger" data-toggle="tooltip" title="Hapus Baris" id="HapusBaris"><i class="fa fa-times"></i></a>';
+        Baris += '<a class="btn btn-sm btn-danger" data-toggle="tooltip" title="Xóa" id="deleteProduct"><i class="fa fa-times"></i></a>';
         Baris += '</td>';
         Baris += '</tr>';
 
@@ -69,7 +69,7 @@ echo $string;
 
     }
 
-    $(document).on('click', '#HapusBaris', function (e) {
+    $(document).on('click', '#deleteProduct', function (e) {
         e.preventDefault();
         var Nomor = 1;
         $(this).parent().parent().remove();
@@ -79,22 +79,22 @@ echo $string;
         });
     });
 
-//    $(document).ready(function () {
-//        $('#SimpanData').submit(function (e) {
-//            e.preventDefault();
-//            biodata();
-//        });
-//    });
+    $(document).ready(function () {
+        $('#insertProduct').submit(function (e) {
+            e.preventDefault();
+            biodata();
+        });
+    });
 
     function biodata() {
         $.ajax({
-            url: $("#SimpanData").attr('action'),
+            url: $("#insertProduct").attr('action'),
             type: 'post',
             cache: false,
             dataType: "json",
-            data: $("#SimpanData").serialize(),
+            data: $("#insertProduct").serialize(),
             success: function (data) {
-                if (data.success == true) {
+                if ( 1 == 1) {
                     $('.inp_nameProduct').val('');
                     $('.inp_trademark').val('');
                     $('.inp_categori').val('');
@@ -106,7 +106,7 @@ echo $string;
                         $("#notif").html("OK").fadeOut(5000).delay(800);
                     });
                 } else {
-                    $('#notif').html('<div class="alert alert-danger">Successfully!</div>')
+                    $('#notif').html('<div class="alert alert-danger">Error!</div>')
                 }
             },
 
