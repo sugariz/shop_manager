@@ -18,5 +18,9 @@
             return $result->result_array();
         }
         
+        function delete_product($ma_sp) {
+            $result = $this->db->query("DELETE FROM sanpham where ma_sp = '".$ma_sp."'");
+        }
+        
     }
 ?>

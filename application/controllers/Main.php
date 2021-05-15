@@ -18,6 +18,7 @@
             $this->load->model("loadProduct");
             $data["typeArray"] = $this->loadProduct->return_types();
             $data["subview"] = "admin/Product";
+            $data["script"] = "product";
             $this->load->view('admin/master', $data);
         }
         

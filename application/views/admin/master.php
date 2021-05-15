@@ -1,4 +1,4 @@
-<?php $this->load->view('admin/header') ?>
+<?php $this->load->view('admin/header'); ?>
 <body class="sidebar-mini layout-fixed" style="height: auto;">
     <div class="wrapper">
         <div class="wrapper">
@@ -158,7 +158,7 @@
                                 </li>
                                 <li class="nav-item" id="li-o">
                                     <i class="fas fa-shopping-cart"></i>
-                                    <a class="nav-link" href="#order">Order</a>
+                                    <a class="nav-link" href="/shop_manager/ManagerProduct">Order</a>
                                 </li>
                             </ul>
                             <!-- /.sidebar-menu -->
@@ -468,4 +468,4 @@
     </div>
     <div class="jqvmap-label" style="display: none;"></div>
 </body>
-<?php $this->load->view('admin/footer')?>
+<?php $this->load->view('admin/footer');?>
