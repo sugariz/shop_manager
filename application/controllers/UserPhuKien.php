@@ -1,5 +1,5 @@
 <?php
-    class mainUser extends CI_Controller{
+    class userPhuKien extends CI_Controller{
         function __construct()
         {
             parent::__construct();
@@ -14,13 +14,13 @@
             if(!isset($_SESSION["typeArray"]))
                 $_SESSION["typeArray"] = $this->loadProduct->return_types();
         }
-        function index(){
-            $data["title"] = "Trang chủ";
-            $data["view_page"] = "user/bodyTrangChu";
-            $data["script"] = "user/scriptIndex";
-
+        public function index() {
+            $data["script"] = "user/scriptProduct";
+            $this->load->model("loadProduct");
             $data["productArray"] = $_SESSION["productArray"];
             $data["typeArray"] = $_SESSION["typeArray"];
+            $data["title"] = "Phụ kiện";
+            $data["view_page"] = "user/bodyPhuKien";
             $this->load->view('user/trangchu', $data);
         }
     }

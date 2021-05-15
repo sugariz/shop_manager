@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <ul class="list-sub-menu-info">
-                        <li class="woman-shose" id="woman-s"><img class="img-reponsive" src="<?php echo base_url();?>user/img/main-menut-icon-1-1fb5f7d8-af7e-4e50-809a-d3b1de092d53.png" alt=""><a href="<?php echo site_url('main/giaynu')?>">giày
+                        <li class="woman-shose" id="woman-s"><img class="img-reponsive" src="<?php echo base_url();?>user/img/main-menut-icon-1-1fb5f7d8-af7e-4e50-809a-d3b1de092d53.png" alt=""><a href="/shop_manager/userGiayNu">giày
                                 nữ</a>
                             <div class="icon-reponsive-sub-menu" id="icon-reponsive">
                                 <i class="far fa-plus-square"></i>
@@ -118,7 +118,7 @@
                                 <li><a href="#"><i class="fas fa-caret-right"></i>dép lười</a></li>
                             </ul>
                         </li>
-                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/main-menu-icon-nam.png" alt=""><a href="<?php echo site_url('main/giaynam')?>">giày nam</a>
+                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/main-menu-icon-nam.png" alt=""><a href="/shop_manager/userGiayNam">giày nam</a>
                             <div class="icon-reponsive-sub-menu" id="icon-reponsive">
                                 <i class="far fa-plus-square"></i>
                             </div>
@@ -133,7 +133,7 @@
                         <li><img class="img-reponsive" src="<?php echo base_url();?>user/img/img-sale-5-e58148bd-f8b8-49a1-8635-a0df5012587d.png" alt=""><a href="#">sale
                                 100k</a></li>
                         <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/img-sale-5-e58148bd-f8b8-49a1-8635-a0df5012587d-9fbb6a0b-7570-4e31-87b6-0513fc3b5a0f.png" alt=""><a href="#">sale 150k</a></li>
-                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/icon-05-150x150.png"><a href="<?php echo site_url('main/aokhoac')?>">áo khoác</a>
+                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/icon-05-150x150.png"><a href="/shop_manager/userAoKhoac">áo khoác</a>
                             <div class="icon-reponsive-sub-menu" id="icon-reponsive">
                                 <i class="far fa-plus-square"></i>
                             </div>
@@ -142,7 +142,7 @@
                                 <li><a href="#"><i class="fas fa-caret-right"></i>áo khoác cặp</a></li>
                             </ul>
                         </li>
-                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/ba-lo-quai-cheo.png" alt=""><a href="<?php echo site_url('main/balo')?>">balo-túi</a>
+                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/ba-lo-quai-cheo.png" alt=""><a href="/shop_manager/userBalo">balo-túi</a>
                             <div class="icon-reponsive-sub-menu" id="icon-reponsive">
                                 <i class="far fa-plus-square"></i>
                             </div>
@@ -169,7 +169,7 @@
                                 <li><a href="#"><i class="fas fa-caret-right"></i>set bộ</a></li>
                             </ul>
                         </li>
-                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/45434310-1970581836364173-1044894057681125376-n.jpg" alt=""><a href="<?php echo site_url('main/phukien')?>">phụ kiện</a>
+                        <li class="label-reponsive"><img class="img-reponsive" src="<?php echo base_url();?>user/img/45434310-1970581836364173-1044894057681125376-n.jpg" alt=""><a href="/shop_manager/userPhuKien">phụ kiện</a>
                             <div class="icon-reponsive-sub-menu" id="icon-reponsive">
                                 <i class="far fa-plus-square"></i>
                             </div>
