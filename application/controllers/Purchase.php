@@ -11,7 +11,7 @@
         }
         function index(){
             $data["data"] = $this->purchase_model->getPurchaseList();
-            $data["subview"] = "purchase_view";
+            $data["subview"] = "admin/purchase_view";
             $data["title"] = "Purchase";
             $this->load->view("admin/master",$data);
         }

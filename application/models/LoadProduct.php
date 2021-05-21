@@ -22,5 +22,10 @@
             $result = $this->db->query("DELETE FROM sanpham where ma_sp = '".$ma_sp."'");
         }
         
+        function update_product($name, $row) {
+            $this->db->where('ma_sp', $name);
+            $this->db->update('sanpham', $row);
+        }
+        
     }
 ?>
