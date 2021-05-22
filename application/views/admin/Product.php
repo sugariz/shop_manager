@@ -44,18 +44,6 @@
                                         </div>
                                     </form>
                                 </div>
-                                <?php
-                                if (isset($script)) {
-                                    if ($script == "product") {
-                                        echo '<script src="public/jsAdmin/loopProduct.js"></script>';
-                                        echo '<script src="public/jsAdmin/getImage.js"></script>';
-                                    }
-                                }
-                                ?>
-                                <!--                            <div class="clearfix"></div>
-                                                            <div id="capnhat" href="/shop_manager/ManagerProduct" class="container tab-pane fade"><br>
-                                                                <a class="nav-link" href="/shop_manager/ManagerProduct">Cap nhat</a>
-                                                            </div>-->
                             </div>
                         </div>
                     </div>
@@ -80,53 +68,3 @@
 </script>
 <script src="public/jsAdmin/loopProduct.js"></script>
 <script src="public/jsAdmin/getImage.js"></script>
-
-<script>
-    $(document).ready(function () {
-    $('#insertProduct').submit(function (e) {
-        e.preventDefault();
-        biodata();
-    });
-});
-
-function biodata() {
-    $.ajax({
-        url: $("#insertProduct").attr('action'),
-        type: 'post',
-        cache: false,
-        dataType: "json",
-        data: $("#insertProduct").serialize(),
-        success: function (data) {
-            if ( data.success == true) {
-                $('#notif').fadeIn(800, function () {
-                    $("#notif").html(data.notif).fadeOut(5000).delay(800);
-                });
-            } else {
-                $('#notif').html('<div class="alert alert-danger">Error!</div>')
-            }
-        },
-        error: function (jqXHR, exception) {
-            var msg = '';
-            if (jqXHR.status === 0) {
-                msg = 'Not connect.\n Verify Network.';
-            } else if (jqXHR.status == 404) {
-                msg = 'Requested page not found. [404]';
-            } else if (jqXHR.status == 500) {
-                msg = 'Internal Server Error [500].';
-            } else if (exception === 'parsererror') {
-                msg = 'Requested JSON parse failed.';
-            } else if (exception === 'timeout') {
-                msg = 'Time out error.';
-            } else if (exception === 'abort') {
-                msg = 'Ajax request aborted.';
-            } else {
-                msg = 'Uncaught Error.\n' + jqXHR.responseText;
-            }
-            $('#post').html(msg);
-            $('#notif').html(msg);
-        }
-
-    });
-}
-
-</script>

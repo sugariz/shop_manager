@@ -11,7 +11,7 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container">
-            <form action="<?php echo base_url('ManagerProduct/post') ?>" method="post" id="insertProduct">
+            <form action="<?php echo base_url('ManagerProduct/post') ?>" method="post" id="modifyProduct">
                 <div class="col-md-12">
                     <div id="notif"></div>
                 </div>

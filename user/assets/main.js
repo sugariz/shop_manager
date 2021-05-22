@@ -47,7 +47,7 @@
                                 toggleCart(true);
                             }
                             // alert("Bạn đã thanh toán thành công!")
-                            window.location = "formMuaHang.html";
+//                            window.location = "formMuaHang.html";
                         } else {
                             toggleCart(false);
                         }

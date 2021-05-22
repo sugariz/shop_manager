@@ -21,6 +21,40 @@
             return $listSp;
         }
 
+        public function add($id,$ma_nhap,$soluong){
+            $id = intval($id);
+            $ma_nhap = intval($ma_nhap);
+            $soluong = intval($soluong);
+            $data=array(
+                "ma_sp"=>$id,
+                "ma_nhap"=>$ma_nhap,
+                "soluong"=>$soluong
+            );
+            $this->db->insert($this->_table,$data);
+        }
+
+        public function edit($id,$ma_nhap,$soluong){
+            $data=array(
+                "ma_sp"=>$id,
+                "soluong"=>$soluong
+            );
+            $this->db->where("ma_nhap",$ma_nhap);
+            try{
+                $this->db->update($this->_table,$data);
+            }catch(Exception $e){
+            }
+        }
+
+        function check_khoaChinh($ma_sp,$ma_nhap){
+            $arr = $this->getList();
+            foreach($arr as $value){
+                if($ma_sp == $value['ma_sp'] && $ma_nhap == $value['ma_nhap']){
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public function delByPurchaseID($id){
             $this->db->where("ma_nhap",$id);
             $this->db->delete($this->_table);

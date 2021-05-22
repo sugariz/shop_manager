@@ -4,14 +4,6 @@
         {
             parent::__construct();
             $this->load->model("loadProduct");
-            session_start();
-            if(!isset($_SESSION["productArray"])) {
-                $_SESSION["productArray"] = $this->loadProduct->return_products();
-            }
-            if(!isset($_SESSION["typeArray"]))
-                $_SESSION["typeArray"] = $this->loadProduct->return_types();
-            if(!isset($_SESSION["typeArray"]))
-                $_SESSION["typeArray"] = $this->loadProduct->return_types();
         }
 
         public function index(){
@@ -36,12 +28,12 @@
 
             foreach ($nameProduct as $row) {
                 $data = [
-                    'ten_sp' => $row,
-                    'ma_theloai' => (int)($this->find($array, $nameCategori[$i], "ten_theloai")["ma_theloai"]),
+                    'ten_sp' => $nameProduct[$i],
+                    'ma_theloai' => 1,
                     'thuonghieu' => $nameTrademark[$i],
-                    'gia_sp' => (int)$price[$i],
-                    'soluong_sp' => (int)$amount[$i],
-                    'hinhanh' => $picture[$i],
+                    'gia_sp' => $price[$i],
+                    'soluong_sp' => $amount[$i],
+                    'hinhanh' => "img/shose-men.jpg",
                     'chitiet_sp' => $detail[$i]
                 ];
                     $insert = $this->db->insert('sanpham', $data);

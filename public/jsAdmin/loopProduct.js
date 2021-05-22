@@ -90,7 +90,7 @@ function biodata() {
                 $('.inp_amount').val('');
                 $('.inp_detail').val('');
                 $('#notif').fadeIn(800, function () {
-                    $("#notif").html("OK").fadeOut(5000).delay(800);
+                    $("#notif").html(data.notif).fadeOut(5000).delay(800);
                 });
             } else {
                 $('#notif').html('<div class="alert alert-danger">Error!</div>')
