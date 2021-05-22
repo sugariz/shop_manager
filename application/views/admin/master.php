@@ -153,7 +153,7 @@
                                 </li>
                                 <li class="nav-item" id="li-o">
                                     <i class="fas fa-shopping-cart"></i>
-                                    <a class="nav-link" href="/shop_manager/ManagerProduct">Order</a>
+                                    <a class="nav-link" href="/shop_manager/Sale">Sales</a>
                                 </li>
 								<li class="nav-item" id="li-o">
                                     <i class="fas fa-shopping-cart"></i>
